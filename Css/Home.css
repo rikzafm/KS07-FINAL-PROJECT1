@@ -23,3 +23,28 @@ padding-top: 300px;
         border: none;
         box-shadow: 0 1rem 3rem rgba(145, 145, 145, 0.175) !important;
     }
+
+    .about {
+        padding-bottom: 70px;
+    }
+    
+    .about__pic {
+        margin-bottom: 35px;
+    }
+    
+    .about__pic img {
+        min-width: 100%;
+    }
+    
+    .about__item {
+        margin-bottom: 30px;
+    }
+    
+    .about__item h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .about__item p {
+        margin-bottom: 0;
+    }
