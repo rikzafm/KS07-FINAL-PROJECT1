@@ -1,0 +1,55 @@
+body{
+    margin-top:20px;
+    background: #f8f8f8;
+}  
+
+.inputBox {
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    border: 10px solid rgba(0, 0, 0, 0);
+}
+
+.todo-list {
+    margin: 10px 20px
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item span{
+    margin-right: auto;
+}
+
+.todo-item .checker{
+    margin-right: 5px;
+}
+
+.todo-list .todo-item {
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background: #9f9f9f
+}
+
+div.checker{
+    width: 19px;
+    height: 19px;
+}
+
+div.button, div.checker, div.radio, div.selector, div.uploader {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.deleteButton{
+    background: transparent;
+    border: none;
+    justify-content: end;
+  }

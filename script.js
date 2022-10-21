@@ -1,6 +1,3 @@
-const ToDo = () =>{
-    let num;
-}
 
 function popup() {
     document.getElementById('popup').classList.remove('d-none');
