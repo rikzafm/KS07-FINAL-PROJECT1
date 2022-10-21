@@ -10,7 +10,6 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="Css/Home.css">
-
 </head>
 <body >
    
@@ -36,12 +35,49 @@
       <div class="p-5 bg-gradient text-white">
         <div class="container-1">
             <h1 class="display-3">WELCOME TO LOREM!</h1>
-            <p class="lead">Melayani Kebutuhan Digital Marketing Anda</p>
+            <p class="lead">Melayani Kebutuhan Digital Anda</p>
             <p class="lead">
-                <a class="btn btn-info btn-lg " href="Jumbo action link" role="button">Order Now</a>
+                <p class="btn btn-info btn-lg" onclick="popup()" role="button">Order Now</p>
             </p>
         </div>
       </div>
+    </section>
+    
+    <section class="w-100 h-100 d-none" id="popup">
+        <div class="overlay"></div>
+        <div class="table_popup">
+            <table class="table">
+                <thead class="table_atas">
+                  <tr>
+                    <th scope="row"></th>
+                    <th scope="col">Jasa</th>
+                    <th scope="col">Biaya</th>
+                    <th scope="col">Waktu</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1.</th>
+                    <td>Web Development</td>
+                    <td>Rp. 2.500.000</td>
+                    <td>3 Bulan</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2.</th>
+                    <td>UI/UX Design</td>
+                    <td>Rp. 2.000.000</td>
+                    <td>2 Bulan</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3.</th>
+                    <td>3D Design</td>
+                    <td>Rp. 1.500.000</td>
+                    <td>1 Bulan</td>
+                  </tr>
+                </tbody>
+            </table>
+            <p class="btn btn-dark btn-lg m-auto d-block lead" onclick="close_popup()" role="button">Close</p>
+        </div>
     </section>
 
     <section class="my-5" id="Portfolio">
@@ -55,7 +91,7 @@
               <div class="card mb-3">
                   <img src="img/Screenshot (153).png" class="card-img-top">
                   <div class="card-body">
-                    <h5 class="card-title">HTML CSS PROJEK</h5>
+                    <h5 class="card-title">HTML & CSS PROJECT</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -68,7 +104,7 @@
               <div class="card mb-3">
                   <img src="img/Screenshot (319).png" class="card-img-top">
                   <div class="card-body">
-                    <h5 class="card-title">BOOTSTRAP PROJEK</h5>
+                    <h5 class="card-title">BOOTSTRAP PROJECT</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -81,7 +117,7 @@
               <div class="card mb-3">
                   <img src="img/Screenshot (320).png" class="card-img-top">
                   <div class="card-body">
-                    <h5 class="card-title">JAVASCRIPT PROJEK</h5>
+                    <h5 class="card-title">JAVASCRIPT PROJECT</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -114,7 +150,7 @@
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="about__item">
-                  <h4>Who We Do ?</h4>
+                  <h4>What We Do ?</h4>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Totam, consectetur pariatur. Hic quas temporibus harum omnis maiores. Magni, provident?</p>
               </div>
@@ -133,5 +169,6 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
       crossorigin="anonymous"></script>
+      <script src="script.js"></script>
 </body>
 </html>
