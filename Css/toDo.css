@@ -1,11 +1,20 @@
 body{
     margin: 0;
     padding: 0;
-    background: #f8f8f8;
+    background-image: url("../img/todo_bg.jpg");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }  
 
 main{
-    margin-top: 50px;
+    margin-top: 5%;
+}
+
+h1{
+    color: white;
+    font-weight: 700;
+    font-size: 5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 .inputBox {
@@ -29,7 +38,15 @@ li {
     margin-top: 3px;
     background-color: beige;
     border-radius: 2%;
+    transition: all 0.2s;
 }
+
+li:hover {
+    scale: 1.01;
+    background: rgb(188, 188, 184);
+}
+
+
 
 li button{
     background: transparent;
