@@ -1,7 +1,12 @@
 body{
-    margin-top:20px;
+    margin: 0;
+    padding: 0;
     background: #f8f8f8;
 }  
+
+main{
+    margin-top: 50px;
+}
 
 .inputBox {
     font-size: 18px;
@@ -9,6 +14,10 @@ body{
     width: 100%;
     padding: 10px 10px 10px 20px;
     border: 10px solid rgba(0, 0, 0, 0);
+}
+
+ul{
+    padding : 0;
 }
 
 li {
