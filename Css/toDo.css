@@ -11,45 +11,23 @@ body{
     border: 10px solid rgba(0, 0, 0, 0);
 }
 
-.todo-list {
-    margin: 10px 20px
-}
-
-.todo-item {
+li {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    padding : 10px;
+    margin-top: 3px;
+    background-color: beige;
+    border-radius: 2%;
 }
 
-.todo-item span{
-    margin-right: auto;
-}
-
-.todo-item .checker{
-    margin-right: 5px;
-}
-
-.todo-list .todo-item {
-    padding: 15px;
-    margin: 5px 0;
-    border-radius: 10px;
-    background: #9f9f9f
-}
-
-div.checker{
-    width: 19px;
-    height: 19px;
-}
-
-div.button, div.checker, div.radio, div.selector, div.uploader {
-    display: -moz-inline-box;
-    display: inline-block;
-    zoom: 1;
-    vertical-align: middle;
-}
-
-.deleteButton{
+li button{
     background: transparent;
     border: none;
-    justify-content: end;
-  }
+    color: red;
+}
+
+.checked {
+    text-decoration: line-through;
+}

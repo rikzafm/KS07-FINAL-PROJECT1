@@ -1,25 +1,22 @@
+let input = document.querySelector("#inputBox")
+let list = document.querySelector("#list")
+
+let savedData = JSON.parse(localStorage.getItem("tasks")) || [];
+
 const addItem = (txt) => {
     let li = document.createElement("li");
     const del = document.createElement("button");
     li.innerHTML = txt;
     list.insertBefore(li, list.childNodes[0]);
     del.textContent = "X";
-    del.classList.add("fas", "fas-trash-alt");
     li.appendChild(del);
+
     del.addEventListener("click", (e) => {
         li.parentNode.removeChild(li);
         savedData = savedData.filter((e) => e !== txt);
         localStorage.setItem("tasks", JSON.stringify(savedData))
     });
 }
-
-let input = document.querySelector("#inputBox")
-let list = document.querySelector("#list")
-
-let savedData = JSON.parse(localStorage.getItem("tasks")) || [];
-
-savedData.forEach(addItem);
-
 
 const enterInput = () => {
     let txt = input.value;
@@ -45,4 +42,10 @@ const addListAfterKeypress = (e) => {
     }
 }
 
+const clickList = (e) => {
+    check(e);
+}
+
+savedData.forEach(addItem);
 input.addEventListener("keypress", addListAfterKeypress);
+list.addEventListener("click", clickList)
